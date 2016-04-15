@@ -1,0 +1,21 @@
+{
+  "name": "openhabui",
+  "version": "1.0.0",
+  "description": "dashboard for my openhab",
+  "main": "grunt.js",
+  "dependencies": {
+    "grunt-contrib-uglify": "^1.0.1",
+    "matchdep": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-init": "^0.3.2",
+    "grunt-ts": "^5.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "***REMOVED***",
+  "license": "MIT"
+}

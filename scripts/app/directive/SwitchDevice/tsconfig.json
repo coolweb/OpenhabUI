@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "../../../**/*.ts",
+        "../../business/**/*.ts",
+        "../../../../typings/tsd.d.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "../../../app/app.ts",
+        "../../../app/business/DeviceManager.ts",
+        "../../../app/business/interfaces/IDeviceManager.ts",
+        "../../../app/data/interfaces/IOpenhabRepository.ts",
+        "../../../app/data/OpenhabRepository.ts",
+        "../../../app/directive/BaseDeviceController.ts",
+        "../../../app/directive/IBaseDeviceScope.ts",
+        "../../../app/directive/SwitchDevice/ISwitchDeviceDirectiveScope.ts",
+        "../../../app/directive/SwitchDevice/SwitchDeviceDirective.ts",
+        "../../../app/directive/SwitchDevice/SwitchDeviceDirectiveController.ts",
+        "../../../app/directive/TemperatureDevice/ITemperatureDeviceDirectiveScope.ts",
+        "../../../app/directive/TemperatureDevice/TemperatureDeviceDirective.ts",
+        "../../../app/directive/TemperatureDevice/TemperatureDeviceDirectiveController.ts",
+        "../../../app/model/ErrorCodeEnum.ts",
+        "../../../app/model/ProgramError.ts",
+        "../../../tests/business/DeviceManagerTest.ts",
+        "../../../tests/data/OpenhabRepositoryTest.ts",
+        "../../../tests/mocks/data/IOpenhabRepositoryMock.ts",
+        "../../../tests/mocks/OpenhabUIMocks.ts",
+        "../../business/DeviceManager.ts",
+        "../../business/interfaces/IDeviceManager.ts",
+        "../../../../typings/tsd.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

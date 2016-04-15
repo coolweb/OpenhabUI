@@ -1,0 +1,10 @@
+# ignore external dependencies which are restored
+bower_components/
+node_modules/
+
+# ignore build folder
+dist/
+
+#ignore generated js files
+*.js
+scripts/**/*.js

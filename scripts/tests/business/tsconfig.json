@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "../../**/*.ts",
+        "../../../typings/tsd.d.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "DeviceManagerTest.ts",
+        "../../app/business/DeviceManager.ts",
+        "../../app/business/interfaces/IDeviceManager.ts",
+        "../../app/data/interfaces/IOpenhabRepository.ts",
+        "../../app/data/OpenhabRepository.ts",
+        "../../app/model/ErrorCodeEnum.ts",
+        "../../app/model/ProgramError.ts",
+        "../../tests/business/DeviceManagerTest.ts",
+        "../../tests/data/OpenhabRepositoryTest.ts",
+        "../../../typings/tsd.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
