@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "gruntfile.ts",
+        "scripts/app/app.ts",
+        "scripts/app/business/DeviceManager.ts",
+        "scripts/app/business/interfaces/IDeviceManager.ts",
+        "scripts/app/data/interfaces/IOpenhabRepository.ts",
+        "scripts/app/data/OpenhabRepository.ts",
+        "scripts/app/directive/BaseDeviceController.ts",
+        "scripts/app/directive/IBaseDeviceScope.ts",
+        "scripts/app/directive/SwitchDevice/ISwitchDeviceDirectiveScope.ts",
+        "scripts/app/directive/SwitchDevice/SwitchDeviceDirective.ts",
+        "scripts/app/directive/SwitchDevice/SwitchDeviceDirectiveController.ts",
+        "scripts/app/directive/TemperatureDevice/ITemperatureDeviceDirectiveScope.ts",
+        "scripts/app/directive/TemperatureDevice/TemperatureDeviceDirective.ts",
+        "scripts/app/directive/TemperatureDevice/TemperatureDeviceDirectiveController.ts",
+        "scripts/app/model/ErrorCodeEnum.ts",
+        "scripts/app/model/ProgramError.ts",
+        "scripts/tests/business/DeviceManagerTest.ts",
+        "scripts/tests/data/OpenhabRepositoryTest.ts",
+        "scripts/tests/mocks/data/IOpenhabRepositoryMock.ts",
+        "scripts/tests/mocks/OpenhabUIMocks.ts",
+        "typings/angular-material/angular-material.d.ts",
+        "typings/angularjs/angular-mocks.d.ts",
+        "typings/angularjs/angular.d.ts",
+        "typings/gruntjs/gruntjs.d.ts",
+        "typings/jasmine/jasmine.d.ts",
+        "typings/jquery/jquery.d.ts",
+        "typings/node/node.d.ts",
+        "typings/tsd.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

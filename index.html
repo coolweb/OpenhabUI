@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="./style/palette.css">
+
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-messages/angular-messages.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-material/angular-material.min.js"></script>
+
+    <script type="text/javascript" src="./scripts/app/model/ErrorCodeEnum.js"></script>
+    <script type="text/javascript" src="./scripts/app/model/ProgramError.js"></script>
+
+    <script type="text/javascript" src="./scripts/app/data/OpenhabRepository.js"></script>
+
+    <script type="text/javascript" src="./scripts/app/business/DeviceManager.js"></script>
+
+    <script type="text/javascript" src="./scripts/app/directive/BaseDeviceController.js"></script>
+    <script type="text/javascript" src="./scripts/app/directive/SwitchDevice/SwitchDeviceDirective.js"></script>
+    <script type="text/javascript" src="./scripts/app/directive/SwitchDevice/SwitchDeviceDirectiveController.js"></script>
+    <script type="text/javascript" src="./scripts/app/directive/TemperatureDevice/TemperatureDeviceDirective.js"></script>
+    <script type="text/javascript" src="./scripts/app/directive/TemperatureDevice/TemperatureDeviceDirectiveController.js"></script>
+
+    <script type="text/javascript" src="./scripts/app/app.js"></script>
+  </head>
+  <body ng-app="OpenhabUI">
+    <div layout="row" class="black" style="height:100%">
+      <md-content flex class="black">
+        <div class='md-padding' layout="row" flex>
+          <div layout="row" layout-wrap>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+            <switch-device data-device-label="'Television'" data-device-name="'State_TV'" data-device-command="'Switch_TV'" data-watt-device-name="'Conso_TV'"></switch-device>
+            <switch-device data-device-label="'Bbox'" data-device-name="'State_BboxTv'" data-device-command="'Switch_BboxTv'" data-watt-device-name="'Conso_BboxTv'"></switch-device>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+            <temperature-device data-device-label="'Température salon'" data-device-name="'Temperature_Salon'"></temperature-device>
+          </div>
+        </div>
+      </md-content>
+      <!--<md-content flex class="black">
+        <md-grid-list md-cols="4" md-cols-gt-md="4" md-cols-md="3" md-cols-gt-sm="3" md-row-height="16:9" md-gutter="10px">
+          <md-grid-tile>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+          </md-grid-tile>
+          <md-grid-tile>
+            <switch-device data-device-label="'Television'" data-device-name="'State_TV'" data-device-command="'Switch_TV'" data-watt-device-name="'Conso_TV'"></switch-device>
+          </md-grid-tile>
+          <md-grid-tile>
+            <switch-device data-device-label="'Bbox'" data-device-name="'State_BboxTv'" data-device-command="'Switch_BboxTv'" data-watt-device-name="'Conso_BboxTv'"></switch-device>
+          </md-grid-tile>
+          <md-grid-tile>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+          </md-grid-tile>
+          <md-grid-tile>
+            <switch-device data-device-type="'bulb'" data-device-label="'Salon'" data-device-name="'State_Fauteil'" data-device-command="'Switch_Fauteil'" data-watt-device-name="'Conso_Fauteil'"></switch-device>
+          </md-grid-tile>
+        </md-grid-list>
+      </md-content>-->
+    </div>
+  </body>
+</html>

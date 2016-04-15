@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "../../typings/tsd.d.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "app.ts",
+        "business/DeviceManager.ts",
+        "business/interfaces/IDeviceManager.ts",
+        "data/interfaces/IOpenhabRepository.ts",
+        "data/OpenhabRepository.ts",
+        "directive/BaseDeviceController.ts",
+        "directive/IBaseDeviceScope.ts",
+        "directive/SwitchDevice/ISwitchDeviceDirectiveScope.ts",
+        "directive/SwitchDevice/SwitchDeviceDirective.ts",
+        "directive/SwitchDevice/SwitchDeviceDirectiveController.ts",
+        "directive/TemperatureDevice/ITemperatureDeviceDirectiveScope.ts",
+        "directive/TemperatureDevice/TemperatureDeviceDirective.ts",
+        "directive/TemperatureDevice/TemperatureDeviceDirectiveController.ts",
+        "model/ErrorCodeEnum.ts",
+        "model/ProgramError.ts",
+        "../../typings/tsd.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
