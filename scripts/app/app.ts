@@ -2,18 +2,18 @@ namespace OpenhabUI {
   let app = angular.module("OpenhabUI", ["ng", "ngMaterial"]);
 
   app.config(["$httpProvider", ($httpProvider) => {
-  $httpProvider.defaults.headers.common["Authorization"] =
-  "Basic " + window.btoa("user:password");
+    $httpProvider.defaults.headers.common["Authorization"] =
+    "Basic " + window.btoa("user:password");
 
-  $httpProvider.defaults.headers.common["Content-Type"] =
+    $httpProvider.defaults.headers.common["Content-Type"] =
     "application/json";
-}]);
+  }]);
 
-  app.config(function($mdThemingProvider: ng.material.IThemingProvider) {
+  app.config(["$mdThemingProvider", ($mdThemingProvider: ng.material.IThemingProvider) => {
     $mdThemingProvider.theme("default")
       .accentPalette("green")
       .dark();
-  });
+  }]);
 
   // data
   app.service("ouiOpenhabRepository",
