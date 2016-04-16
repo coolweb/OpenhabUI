@@ -6,7 +6,7 @@ namespace OpenhabUI {
     "Basic " + window.btoa("user:password");
 
     $httpProvider.defaults.headers.common["Content-Type"] =
-    "application/json"; 
+    "application/json";
   }]);
 
   app.config(["$mdThemingProvider", ($mdThemingProvider: ng.material.IThemingProvider) => {
