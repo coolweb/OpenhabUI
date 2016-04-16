@@ -3,7 +3,7 @@ namespace OpenhabUI {
 
   app.config(["$httpProvider", ($httpProvider) => {
   $httpProvider.defaults.headers.common["Authorization"] =
-  "Basic " + window.btoa("coolweb:chipie7711");
+  "Basic " + window.btoa("user:password");
 
   $httpProvider.defaults.headers.common["Content-Type"] =
     "application/json";
