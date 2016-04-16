@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "dashboard for my openhab",
   "main": "grunt.js",
-  "dependencies": {
-    "grunt-contrib-uglify": "^1.0.1",
-    "matchdep": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-ftp-deploy": "^0.1.10",
     "grunt-init": "^0.3.2",
-    "grunt-ts": "^5.4.0"
+    "grunt-ts": "^5.4.0",
+    "matchdep": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

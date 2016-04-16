@@ -3,8 +3,6 @@ namespace OpenhabUI.Data {
     OpenhabUI.Data.Interfaces.IOpenhabRepository {
     private openhabHost = "192.168.1.6";
     private openhabPort = "8080";
-    private user = "";
-    private password = "";
 
     static $inject = ["$log", "$http", "$q"];
 
