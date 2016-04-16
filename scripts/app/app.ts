@@ -14,7 +14,7 @@ namespace OpenhabUI {
       .accentPalette("green")
       .dark();
   }]);
-
+ 
   // data
   app.service("ouiOpenhabRepository",
     OpenhabUI.Data.OpenhabRepository);
